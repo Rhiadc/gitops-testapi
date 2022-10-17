@@ -1,0 +1,9 @@
+{
+    "aws_account": "123456",
+    "asset_id": "11223344",
+    "cluster": {
+      "owner": "rhiad.ciccoli@gmail.com",
+      "name": "engineering-dev",
+      "address": "https://kubernetes.default.svc"
+    }
+  }
