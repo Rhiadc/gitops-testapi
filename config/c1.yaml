@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grpcapi
+  name: grpcapi1
 spec:
   selector:
     matchLabels:
-      app: grpcapi
+      app: grpcapi1
   template:
     metadata:
       labels:
-        app: grpcapi
+        app: grpcapi1
         v: c1
     spec:
       containers:
-        - name: grpcapi
+        - name: grpcapi1
           image: rhiadciccoli/testapi:latest
           ports:
           - containerPort: 4040
@@ -24,7 +24,7 @@ metadata:
   name: grpcapi-service
 spec:
   selector:
-    app: grpcapi
+    app: grpcapi1
   ports:
   - protocol: TCP
     port: 4040
