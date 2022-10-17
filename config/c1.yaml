@@ -13,7 +13,7 @@ spec:
         v: c1
     spec:
       containers:
-        - name: grpcapi
+        - name: grpcapi1
           image: rhiadciccoli/testapi:latest
           ports:
           - containerPort: 4040
