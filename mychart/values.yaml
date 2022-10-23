@@ -4,11 +4,12 @@
 
 replicaCount: 1
 
-image:
-  repository: rhiadciccoli/testapi
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+global:
+  image:
+    repository: rhiadciccoli/testapi
+    pullPolicy: IfNotPresent
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
