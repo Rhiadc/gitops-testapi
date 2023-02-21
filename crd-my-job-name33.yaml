@@ -6,7 +6,7 @@ spec:
     image: my-image-name:eee1.0.0
     flinkVersion: v1_14
     flinkConfiguration:
-        taskmanager.numberOfTaskSlots: ""
+        taskmanager: "2"
         state.savepoints.dir:
             savepoints:
                 dir: ""
