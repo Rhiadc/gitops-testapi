@@ -7,12 +7,8 @@ spec:
     flinkVersion: v1_14
     flinkConfiguration:
         taskmanager.numberOfTaskSlots: "2"
-        state.savepoints.dir:
-            savepoints:
-                dir: ""
-        state.checkpoints.dir:
-            checkpoits:
-                dir: ""
+        state.savepoints.dir: ointing-qa/my-job-name/
+        state.checkpoints.dir: nk-checkpointing-qa/my-job-name/savepoint
     serviceAccount: flink
     podTemplate:
         apiVersion: v1
